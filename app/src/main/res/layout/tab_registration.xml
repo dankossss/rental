@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/fl_home"
+             tools:context="com.rental.da4a.bottomNavigationFragments.FragmentListAllLots">
+
+    <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="80dp"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|bottom">
+
+            <TextView
+                    android:text="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_email"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <EditText
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_email"
+                    android:layout_marginBottom="20dp"/>
+
+            <TextView
+                    android:text="Пароль"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_password"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <EditText
+                    android:inputType="textPassword"
+                    android:ems="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_password"
+                    android:layout_marginBottom="20dp"/>
+
+            <TextView
+                    android:text="Повтор паролю"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_repeat_password"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <EditText
+                    android:inputType="textPassword"
+                    android:ems="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_repeat_password"
+                    android:layout_marginBottom="20dp"/>
+
+            <TextView
+                    android:text="Місто"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_city"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <EditText
+                    android:ems="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_city"
+                    android:layout_marginBottom="20dp"/>
+
+            <TextView
+                    android:text="Телефон"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_phone"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <EditText
+                    android:ems="20"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_phone"
+                    android:layout_marginBottom="20dp"/>
+
+            <Button
+                    android:text="Зареєструватись"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/btn_registration"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/button_border"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
